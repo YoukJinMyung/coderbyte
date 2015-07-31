@@ -1,0 +1,17 @@
+def VowelCount(str)
+
+  count=0  
+  str=str.split(//)
+  str.each do |i|
+    if i.match(/[aeiouAEIOU]/)
+      count+=1
+    end
+  end
+    
+  return count 
+         
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+VowelCount(STDIN.gets)  
