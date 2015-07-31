@@ -1,0 +1,12 @@
+def SimpleSymbols(str)
+
+  a=str.scan(/.?[a-z]./)
+  b=str.scan(/\+[a-z]\+/)
+  
+  return a==b 
+         
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+SimpleSymbols(STDIN.gets)  
